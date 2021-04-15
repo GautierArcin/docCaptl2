@@ -55,7 +55,7 @@ La librairie ***Libesd_dev*** est dépreciée, depuis 2018.
 
 En pratique, cela signifie que nous devons utiliser des version mises sur des repository non-officiel. 
 
-<span style="color:red">**En conséquence, si ces repos viennent à disparaitre (ce qui peut arriver, ce sont des repos communautaires), nous n'aurons plus accès à la librairie et nous seront incapables de reconstruire CAPT-L2.** </span>
+🔴 **En conséquence, si ces repos viennent à disparaitre (ce qui peut arriver, ce sont des repos communautaires), nous n'aurons plus accès à la librairie et nous seront incapables de reconstruire CAPT-L2.** 🔴
 
 
 ---
@@ -66,7 +66,7 @@ En pratique, cela signifie que nous devons utiliser des version mises sur des re
 
 Actuellement, nous arrivons juste à reconstruire les images docker sur la machine de l'ancien développeur. C'est fortement liée au problémes de librairies ci-dessus. 
 
-Concrétement, sur la machine de l'ancien développeur, certaines librairies ont été mises en cache. En conséquence, quand on veut reconstruire une image, docker va aller chercher en local les librairies plutôt que de tenter de les télécharger (plutôt que sur des repo distants, qui n'existent plus). <span style="color:red"> **Nous ne savons toujours pas reconstruire les images docker sur une autre machine. Si cette machine vient à disparaitre, en conséquence, nous serons incapable de re-construire une image CAPT-L2**</span>.
+Concrétement, sur la machine de l'ancien développeur, certaines librairies ont été mises en cache. En conséquence, quand on veut reconstruire une image, docker va aller chercher en local les librairies plutôt que de tenter de les télécharger (plutôt que sur des repo distants, qui n'existent plus) 🔴 **Nous ne savons toujours pas reconstruire les images docker sur une autre machine. Si cette machine vient à disparaitre, en conséquence, nous serons incapable de re-construire une image CAPT-L2** 🔴.
 
 En pratique, Amélie a avancer sur cette partie. Elle a résussie à re-construire une image docker, en effectuant pas mal de modification, mais elle n'est pas, à ce jour, utilisable (Le conteneur Django ne semble pas communiquer avec le conteneur Nginx, nous ne savons toujours pas pourquoi actuellement). Nous continuons d'investiguer cette piste.
 
